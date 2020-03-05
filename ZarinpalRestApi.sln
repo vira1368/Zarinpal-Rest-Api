@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29820.132
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZarinpalRestApi", "ZarinpalRestApi\ZarinpalRestApi.csproj", "{74D9C72B-3AE6-4DD6-B1C1-40B19D38F68B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{74D9C72B-3AE6-4DD6-B1C1-40B19D38F68B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74D9C72B-3AE6-4DD6-B1C1-40B19D38F68B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74D9C72B-3AE6-4DD6-B1C1-40B19D38F68B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74D9C72B-3AE6-4DD6-B1C1-40B19D38F68B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E9336DB0-BBC9-490F-98EF-03A415AC289E}
+	EndGlobalSection
+EndGlobal

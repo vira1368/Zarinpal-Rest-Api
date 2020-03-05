@@ -1,0 +1,8 @@
+﻿@model MessageModel
+@{
+    ViewData["Title"] = "Callback Page";
+}
+
+<div class="alert @(Model.IsError?"alert-danger":" alert-success")">
+    <strong>Message!</strong> @Model.Text
+</div>

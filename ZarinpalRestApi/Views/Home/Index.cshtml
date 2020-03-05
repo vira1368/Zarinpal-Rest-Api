@@ -1,0 +1,33 @@
+﻿@model List<ProductModel>
+@{
+    ViewData["Title"] = "Home Page";
+    var message = TempData["Message"]?.ToString();
+}
+
+@if (!string.IsNullOrEmpty(message))
+{
+    <div class="alert alert-info">
+    <strong>Message!</strong> @message
+    </div>
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Sample code for Zarinpal (online payment gateway), for more information <a href="https://www.zarinpal.com/lab/category/samplecode/">see the documentation</a>.</p>
+</div>
+
+<div class="row">
+    @foreach (var product in Model)
+    {
+        <div class="col-sm-4">
+            <div class="card">
+                <img class="card-img-top p-2" src="@product.Image" alt="@product.Name image">
+                <div class="card-body">
+                    <h4 class="card-title">@product.Name</h4>
+                    <p class="card-text">@product.Amount.ToString("###,### Tomans")</p>
+                    <a href="@Url.Action("Payment","Home",new {id=product.Id})" class="btn btn-primary">Payment</a>
+                </div>
+            </div>
+        </div>
+    }
+</div>
