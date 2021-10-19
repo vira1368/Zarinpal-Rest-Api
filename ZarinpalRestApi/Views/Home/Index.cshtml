@@ -25,9 +25,42 @@
                 <div class="card-body">
                     <h4 class="card-title">@product.Name</h4>
                     <p class="card-text">@product.Amount.ToString("###,### Tomans")</p>
-                    <a href="@Url.Action("Payment","Home",new {id=product.Id})" class="btn btn-primary">Payment</a>
+                    <a href="@Url.Action("Payment","Home",new {id=product.Id})" class="btn btn-primary">Payment V1</a>
+                    <a href="@Url.Action("PaymentV4","Home",new {id=product.Id})" class="btn btn-primary">Payment V4</a>
                 </div>
             </div>
         </div>
     }
+</div>
+
+<br/>
+<div class="row">
+    <div class="col">
+        <div class="alert alert-warning">
+            <strong>Warning!</strong> With v4, we need a real <i>'Merchant ID'</i> to be able to go past bank gateway, otherwise we won't be able to pay.
+        </div>
+    </div>
+</div>
+
+<br/>
+<div class="row">
+    <div class="col">
+        <h3>Differences of v1 and v4: </h3>
+        <ul>
+            <li>
+                v1
+                <ul>
+                    <li>In v1 we rely on Zarinpal Gateway to pay</li>
+                    <li>v1 uses Toman as currency</li>
+                </ul>
+            </li>
+            <li>
+                v4
+                <ul>
+                    <li>In v4 we rely on Zarinpal as a third party agent that redirect us to the physical or others banks gateway of zarinpal choice</li>
+                    <li>v4 uses IRR (Iranian Rials) as currency</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
 </div>

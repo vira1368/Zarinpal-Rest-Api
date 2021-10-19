@@ -11,6 +11,9 @@ namespace ZarinpalRestApi.Models
                 [JsonProperty("MerchantID")]
                 public string MerchantId { get; set; }
 
+                /// <summary>
+                /// The amount of money that should be transfer during this transaction in Toman
+                /// </summary>
                 public decimal Amount { get; set; }
 
                 [JsonProperty("CallbackURL")]
