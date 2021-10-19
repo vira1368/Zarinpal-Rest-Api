@@ -12,6 +12,11 @@
     <Folder Include="wwwroot\images\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Views\HomeV4\Index.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\HomeV4\ShowResult.cshtml" />
+  </ItemGroup>
+
 
 
 </Project>
